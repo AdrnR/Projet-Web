@@ -1,0 +1,117 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 40px; /* Espacement avant la liste */
+}
+
+    
+    
+    
+    body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #444;
+        }
+        .manga-list {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* 5 mangas par ligne */
+            gap: 20px;
+            padding: 20px;
+        }
+        .manga {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out;
+        }
+        .manga:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .manga img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .manga-info {
+            padding: 15px;
+        }
+        .manga-info h2 {
+            font-size: 18px;
+            margin: 0 0 10px;
+            color: #333;
+        }
+        .manga-info p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #666;
+        }
+        .stock {
+            color: #4CAF50;
+        }
+        .no-stock {
+            color: #F44336;
+        }
+   
+    form {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        margin: 20px auto;
+    }
+    input[type=text], input[type=password], input[type=submit] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    input[type=submit] {
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+    }
+    input[type=submit]:hover {
+        background-color: #0056b3;
+    }
+
+    /* Styles existants */
+    .manga:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Nouveau : ajouter une transition douce pour le texte et les images */
+    .manga-info h2, .manga-info p {
+        transition: color 0.3s ease;
+    }
+    .manga:hover h2, .manga:hover p {
+        color: #007bff; /* Changement de couleur au survol */
+    }
